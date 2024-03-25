@@ -8,7 +8,7 @@ import getUserProfile from '@/libs/getUserProfile';
 
 export default function Banner() {
 
-  const covers = ['/img/cover.jpg', '/img/cover2.jpg', '/img/cover3.jpg' , '/img/cover4.jpg']
+  const covers = ['/img/cover.png', '/img/cover2.png', '/img/cover3.png' , '/img/cover4.png']
   const [index , setIndex] = useState(0);
   const router = useRouter(); 
   const { data:session} = useSession();
@@ -21,7 +21,7 @@ export default function Banner() {
   
   return (
     <div className={styles.banner} onClick={() => setIndex(index+1)}>
-        <Image src='/img/cover.png' alt='cover' fill={true} objectFit='cover'/>
+        <Image src={covers[index%4]} alt='cover' fill={true} objectFit='cover'/>
         <div className={styles.bannerText}>
             <h1 className='text-5xl font-bold '>Welcome to Mongkol Dental Clinic</h1>
             <h3 className='text-xl font-serif drop-shadow-lg'>- Revitalize your smile with expert dental care tailored just for you -</h3>

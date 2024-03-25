@@ -1,4 +1,4 @@
-interface dentistItem {
+export interface dentistItem {
   _id: string,
   name: string,
   yearsOfExperience: number,
@@ -8,7 +8,7 @@ interface dentistItem {
   id: string
 }
 
-interface dentistJson {
+export interface dentistJson {
   success: boolean,
   count: number,
   pagination: Object,
@@ -16,7 +16,12 @@ interface dentistJson {
 }
 
 export interface bookItem {
+  _id: string,
   dentistId: string,
-  bookingDate: string,
+  bookDate: Date,
   userId: string
+  username:string
+  dentistname:string
 }
+
+// export interface 

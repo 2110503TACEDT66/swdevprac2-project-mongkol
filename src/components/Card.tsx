@@ -1,4 +1,3 @@
-"use client"
 import React from 'react';
 import Image from 'next/image';
 import InteractiveCard from './InteractiveCard';
@@ -12,12 +11,13 @@ export default function Card({ dentistName, yearOfExperience, expertise }: { den
 
     return (
         <InteractiveCard contentName={dentistName}>
-            <div className='text-center p-4 h-1/4'>
-                {/* <Image src={imgSrc} alt='Product Picture' fill={true} className='object-cover rounded-t-lg' /> */}
-                <div className='text-black'>Dentist Name : {dentistName}</div>
-                <div className='text-black'>Year Of Experience : {yearOfExperience}</div>
-                <div className='text-black'>Expertise : {expertise}</div>
-                <div className='mb-4'></div>
+            <div className='text-center p-4'>
+                <div className="relative h-40 w-full mb-5">
+                    <Image src='/img/dentist.png' alt='Product Picture' layout="fill" objectFit="cover" className='rounded-t-lg' />
+                </div>
+                <div className='text-black font-bold'>Dentist Name : {dentistName}</div>
+                <div className='text-black italic'>Year Of Experience : {yearOfExperience}</div>
+                <div className='text-black italic'>Expertise : {expertise}</div>
             </div>
         </InteractiveCard>
     );

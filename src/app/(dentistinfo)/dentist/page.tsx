@@ -9,7 +9,7 @@ export default function car() {
 
     return (
         <main className="text-center p-5">
-            <h1 className="text-xl font-medium">Select Your Hospital</h1>
+            <h1 className="text-xl font-medium">Select Your Dentist</h1>
             <Suspense fallback={<p>Loading...<LinearProgress /></p>}>
                 <DentistCatalog dentistJson={hospitals} />
             </Suspense>
