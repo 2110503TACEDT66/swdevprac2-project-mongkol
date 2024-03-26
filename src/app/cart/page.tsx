@@ -112,6 +112,7 @@ export default function MyBooking() {
                                     <select
                                         value={editedDentistId}
                                         onChange={(e) => setEditedDentistId(e.target.value)}
+                                        className="ml-10 mt-7"
                                     >
                                         <option value="">Select Dentist</option>
                                         {dentists.map((dentist:dentistItem) => (
@@ -122,7 +123,7 @@ export default function MyBooking() {
                                     </select>
                                     <DateReserve onDateChange={(value: Dayjs | null) => { setDate(value as null) }} />
                                     <button
-                                        className="text-white bg-blue-500 rounded-md px-3 py-1"
+                                        className="text-white bg-blue-500 rounded-md px-3 py-1 mt-2"
                                         onClick={() => handleUpdate(bookItem._id, token, date , editedDentistId)}
                                     >
                                         Save
