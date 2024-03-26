@@ -9,10 +9,11 @@ import { revalidateTag } from "next/cache"
 import { redirect } from "next/navigation"
 import { dentistItem } from "../../interface"
 import { dentistJson } from "../../interface"
+import getDentists from "@/libs/getDentists"
 
 export default async function DentistCatalog({dentistJson} : {dentistJson : Promise<dentistJson>}) {
 
-    const dentistJsonReady = await dentistJson
+    const dentistJsonReady = await getDentists()
     
     // console.log(dentistJsonReady)
 
