@@ -157,7 +157,7 @@ export default function MyBooking() {
             ) : (
                     <div className="text-center">
                         <h1 className="text-xl font-bold text-center mt-10 font-serif">No bookings found</h1>
-                        <Link href="/dentist" className="text-xl font-md text-center mt-10 font-serif mt-2">Check Our Dentist for a Booking</Link>
+                        <Link href="/dentist" className="text-xl font-bold text-center mt-10 font-serif mt-2 hover:underline text-blue-700">Check Our Dentist for a Booking</Link>
                         <Image src="/img/checkDent.png" width={300} height={300} alt="Check Dentist"  className="mx-auto rounded-xl shadow-md mt-5"/>
                     </div>
             )}
