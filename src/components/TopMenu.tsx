@@ -22,10 +22,10 @@ export default async function TopMenu() {
 
             {
                 session ? <Link href="/api/auth/signout">
-                    <div className='bg-white text-cyan-600 border border-cyan-600 font-semibold py-2 px-2 absolute left-0 top-0  rounded z-30 hover:bg-cyan-600 hover:text-white hover:border-transparent'>
+                    <div className='bg-white text-cyan-600 border border-cyan-600 font-semibold py-2 px-2 absolute left-2 top-1 rounded z-30 hover:bg-cyan-600 hover:text-white hover:border-transparent'>
                     Log-out</div></Link> :
                         <Link href="/api/auth/signin">
-                    <div className='bg-white text-cyan-600 border border-cyan-600 font-semibold py-2 px-2 absolute left-0 top-0  rounded z-30 hover:bg-cyan-600 hover:text-white hover:border-transparent'>
+                    <div className='bg-white text-cyan-600 border border-cyan-600 font-semibold py-2 px-2 absolute left-2 top-1 rounded z-30 hover:bg-cyan-600 hover:text-white hover:border-transparent'>
                     Log-in</div></Link>
             }
         </div>
