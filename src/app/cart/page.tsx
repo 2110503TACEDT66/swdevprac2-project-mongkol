@@ -12,6 +12,7 @@ import getDentist from "@/libs/getDentist";
 import { get } from "http";
 import { bookItem, dentistItem } from "../../../interface";
 import { Dayjs } from "dayjs";
+import Image from "next/image";
 
 export default function MyBooking() {
     const [bookings, setBookings] = useState([]);
@@ -153,10 +154,11 @@ export default function MyBooking() {
                     ))}
                 </div>
             ) : (
-                <div>
-                    <h1 className="text-xl font-bold text-center mt-10">No bookings found</h1>
-                    <Link href="/dentist" className="text-xl font-bold text-center mt-10">Check Our Dentist for a Booking</Link>
-                </div>
+                    <div className="text-center">
+                        <h1 className="text-xl font-bold text-center mt-10 font-serif">No bookings found</h1>
+                        <Link href="/dentist" className="text-xl font-md text-center mt-10 font-serif mt-2">Check Our Dentist for a Booking</Link>
+                        <Image src="/img/checkDent.png" width={300} height={300} alt="Check Dentist"  className="mx-auto rounded-xl shadow-md mt-5"/>
+                    </div>
             )}
         </div>
     );
