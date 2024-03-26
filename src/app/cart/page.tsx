@@ -104,7 +104,7 @@ export default function MyBooking() {
                         <div key={bookItem._id} className="bg-slate-200 rounded-md px-5 mx-5 py-2 my-2">
                             <div className="text-xl">Username : {bookItem.username}</div>
                             <div className="text-xl">Reservation Date : {new Date(bookItem.bookDate).toLocaleDateString()}</div>
-                            <div>Dentist : {bookItem.dentistname}</div>
+                            <div className="text-xl">Dentist : {bookItem.dentistname}</div>
                             {/* <div className="text-xl">{bookItem.dentistId}</div> */}
                             {editedBookingId === bookItem._id ? (
                                 <div>

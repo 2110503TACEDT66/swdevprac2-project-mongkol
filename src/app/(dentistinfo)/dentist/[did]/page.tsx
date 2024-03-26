@@ -10,7 +10,7 @@ export default async function DentistDetailPage({ params }: { params: { did: str
         <main className="text-center p-5">
             <div className="text-2xl font-bold mb-5">Dentist Detail</div>
             <div className="relative w-45 h-64 mb-8">
-                <Image src='/img/dentist.png' alt='Dentist Picture' layout="fill" objectFit="cover" className='rounded-t-lg' />
+                <Image src='/img/tooth.png' alt='Dentist Picture' layout="fill" objectFit="cover" className='rounded-t-lg' />
             </div>
             <div className="overflow-x-auto">
                 <table className="table-auto mx-auto bg-white border border-gray-200 rounded-lg shadow-md">

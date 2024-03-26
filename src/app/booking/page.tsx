@@ -100,7 +100,7 @@ export default function Reservations() {
             </table>
         )}
         {!showSelectDentistBtn && (
-            <button className="block rounded-md bg-sky-600 hover:bg-indigo-600 px-3 py-2 text-white shadow-sm" name="Book Vaccine" onClick={makeBooking}>Book Vaccine</button>
+            <button className="block rounded-md bg-sky-600 hover:bg-indigo-600 px-3 py-2 text-white shadow-sm" name="Book Dentist" onClick={makeBooking}>Book Dentist</button>
         )}
     </main>    
     </div>

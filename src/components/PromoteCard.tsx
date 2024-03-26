@@ -19,15 +19,14 @@ export default function PromoteCard() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % slideImages.length);
-        }, 3000); // Auto-slide every 3 seconds
+        }, 5000); // Auto-slide every 3 seconds
 
         return () => clearInterval(interval);
     }, []);
 
     return (
         <div className="w-[80%] shadow-lg mx-[10%] my-10 p-2 rounded-lg bg-gray-200 flex flex-row relative overflow-hidden">
-            {/* Slideshow images */}
-            {slideImages.map((image, index) => {
+            {/* {slideImages.map((image, index) => {
                 const position = index === currentIndex ? "0%" : index === (currentIndex + 1) % slideImages.length ? "-100%" : "100%";
                 const opacity = index === currentIndex ? 1 : 0;
                 return (
@@ -39,11 +38,10 @@ export default function PromoteCard() {
                         style={{ right: position, opacity }}
                     />
                 );
-            })}
-            {/* Text content */}
+            })} */}
             <div className="m-5 text-black z-10">
-                <p className="mb-4">Why Booking with Us ??</p>
-                <p className="text-lg font-serif italic drop-shadow-lg">{text[currentIndex]}</p>
+                <p className="mb-4 text-center text-lg text-bold font-serif">Why Booking with Us ??</p>
+                <p className="text-md font-serif italic drop-shadow-lg">{text[currentIndex]}</p>
             </div>
         </div>
     );
