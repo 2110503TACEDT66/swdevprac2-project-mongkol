@@ -29,7 +29,7 @@ export default function Banner() {
             <div className='mb-10'></div>
             <button
               className='bg-white text-cyan-600 border border-cyan-600 font-semibold py-2 px-2 m-2 rounded z-30 hover:bg-cyan-600 hover:text-white hover:border-transparent'
-              onClick={(e) => { e.stopPropagation(); router.push('/dentist'); }}>
+              onClick={(e) => { window.location.href = '/dentist'; }}>
               BOOK NOW
             </button>
         </div>
